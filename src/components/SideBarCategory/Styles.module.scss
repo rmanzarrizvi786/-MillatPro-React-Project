@@ -1,0 +1,19 @@
+.list{
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+  }
+  .myAc{
+    border: 0px !important;
+    background-color: none !important;
+    // color: red !important;
+    // border-bottom: 1px solid rgb(255, 0, 0) !important;
+  }
+  .listActive{
+    color: red !important;
+  }
+  .listActive:hover{
+    color: red;
+  }
+  .listInActive{
+    color: aquamarine !important;
+  }

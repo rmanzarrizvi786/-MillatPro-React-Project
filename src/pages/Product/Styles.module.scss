@@ -1,0 +1,386 @@
+.brdHov {
+  transition: color ease-in-out 0.2s;
+  &:hover {
+    color: #FF0000;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+
+    img {
+      width: 106.8px;
+      height: 106.8px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      padding: 10px;
+      transition: all 0.35s ease-in-out;
+      border: 1px solid transparent;
+    }
+
+    .activeImage {
+      transition: all 0.35s ease;
+      border-color: #FF0000;
+    }
+
+    .notActive {
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+ 
+
+  .mainImage {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: opacity 0.5s;
+      display: block;
+      background: #fff;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.right {
+  .counterSection {
+    width: 100px;
+    display: flex;
+    border: 1px solid #dadada;
+
+    .counterField {
+      width: 100%;
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8.5px;
+      color: #777;
+      font-weight: 300;
+
+      &[type="number"]::-webkit-inner-spin-button,
+      &input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    .counterBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      background: none;
+      padding: 12.5px 8px;
+      color: #9c9c9c;
+      transition: color ease-in-out 0.3s;
+      cursor: pointer;
+
+      svg {
+        font-size: 11px;
+      }
+
+      &:hover {
+        color: #FF0000;
+      }
+    }
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    line-height: 30px;
+    text-align: left;
+    margin: 0 0 15px;
+  }
+
+  .rate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    p {
+      margin-left: 6px;
+      font-size: 13px;
+      color: #ccc;
+      font-weight: 300;
+      transition: color ease 0.35s;
+
+      &:hover {
+        color: #bf8040;
+      }
+    }
+  }
+
+  .price {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 13px;
+    color: #FF0000;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.buttons {
+  display: flex;
+  margin: 20px 0 30px;
+}
+
+.addToCardBtn {
+  width: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.813rem;
+  padding: 6px 15px;
+  background: transparent;
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background: #FF0000;
+  }
+
+  svg {
+    font-size: 16px;
+    margin-right: 1.125rem;
+  }
+}
+
+.addToWishlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 34px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  &:hover {
+    p {
+      color: #bf8040;
+      box-shadow: 0 1px 0 0 #FF0000;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: #666666;
+    transition: all ease 0.3s;
+  }
+
+  svg {
+    font-size: 1.2rem;
+    margin-right: 11px;
+    color: #FF0000;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  .socialsIcon {
+    display: flex;
+    div {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e1e2e6;
+      transition: all ease-in-out 0.3s;
+      margin-left: 1rem;
+      color: #777;
+
+      &:hover {
+        color: #FF0000;
+        border-color: #FF0000;
+      }
+    }
+  }
+}
+
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+  border-top: 0.1rem solid #ebebeb;
+  p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.attributeName {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.variationList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.variationItem {
+  margin: 0;
+}
+
+.variationButton {
+  border: 1px solid #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.variationButton:hover {
+  background-color: red !important;
+  color: #ffffff;
+  border-color: red; 
+}
+
+.selectedVariation {
+  background-color: red !important;
+  color: #ffffff;
+  border-color: red; 
+}
+
+//product images
+.product_images {
+  display: flex;
+  flex: 2;
+  gap: 2rem;
+}
+.small_images_container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.small_image{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.big_image_container {
+  width: 80%;
+  height: 100%;
+}
+.big_image_container img {
+  max-width: 400px;
+  height: auto;
+}
+.mainImage{
+width: 100%;
+    max-width: 400px;
+    height: 350.391px;
+    min-height: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;}
+@media screen and (max-width:550px) {
+  .small_images_container{
+    flex-direction: row;
+  }
+  .product_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .left {
+    flex-direction: column-reverse !important;
+    .images {
+      flex-direction: row;
+      img {
+        width: calc(100% / 3);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .right {
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .buttons {
+    .addToCardBtn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .addToWishlist {
+      margin-left: 0;
+    }
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .end {
+    flex-direction: column;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
+.priceColor{
+  color: green;
+  text-decoration: none;
+}
+.del{
+  color: red;
+}

@@ -1,0 +1,20 @@
+.mainSectionOfForget{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    .contShadow{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        max-width: 950px;
+        margin: 0px 20px;
+    }
+}
+
+.logCol{
+    img{
+        max-width: 80px;
+        height: auto;
+    }
+}

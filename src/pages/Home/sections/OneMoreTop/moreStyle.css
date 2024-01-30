@@ -1,0 +1,17 @@
+.swiper-button-next {
+    color: #d59898;
+}
+
+.swiper-button-prev {
+    color: #d59898 ;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 510px){
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 20px;
+    }
+}

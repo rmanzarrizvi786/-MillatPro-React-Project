@@ -1,0 +1,158 @@
+/* body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #fff;
+    color: #000;
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Poppins", sans-serif !important;
+} */
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #FF0000;
+    border-color: #eb4d55;
+
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: red;
+    border-color: #FF0000;
+    box-shadow: 1px 1px 10px black !important;
+}
+/* .content {
+    padding: 7rem 0;
+} */
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus-visible{
+    color: white;
+    background-color:red !important;
+    border-color: #FF0000 !important;
+    box-shadow: 1px 1px 10px black !important;
+}
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+}
+
+.form-control:active,
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: red;
+}
+
+.btn,
+.form-control {
+    height: 55px;
+}
+
+form.border-right {
+    padding-right: 6rem !important;
+}
+
+@media (max-width: 991.98px) {
+    form.border-right {
+        padding-right: 0 !important;
+        border-right: none !important;
+    }
+}
+
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-warning {
+    color: #B90B0B;
+}
+
+#form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}
+textarea#message_text {
+    height: initial;
+}
+.react-tel-input .form-control{
+    height: 55px !important;
+    outline: none;
+    border: none !important;
+    border-bottom: 1px solid #d9d9d9 !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+}
+.react-tel-input .flag-dropdown {
+    border: none !important;
+    background: transparent !important;
+}
+.react-tel-input .form-control:active,
+.react-tel-input .form-control:focus{
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-color: red !important;
+}
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+    background-color: transparent !important;
+}
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+}
+@media screen and (max-width:600px){
+    .headings_form{
+        font-size: 30px !important;
+    }
+}

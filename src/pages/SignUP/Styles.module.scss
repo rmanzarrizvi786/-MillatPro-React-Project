@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #fff;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Poppins", sans-serif !important;
+}
+.logo_{
+  width: 65px;
+}
+.mainLoginSection {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+   height: auto;
+  padding: 20px;
+  // background-color: #1A1A1A;
+}
+.colorWhite {
+  color: black;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+.labelColor {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+.loginFormSection {
+  // background-image: linear-gradient(
+  //     rgba(29, 38, 113, 0.8),
+  //     rgba(195, 55, 100, 0.8)
+  //   ),
+  //   url("https://media.istockphoto.com/id/1368262804/photo/volleyball-player-players-in-action-sports-banner.jpg?s=612x612&w=0&k=20&c=QQ9Y5ok2rP6Q2Jwe4WvYdoBChsEFbpfpmjUx8n6jIFk=");
+  // background-image: linear-gradient();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;margin: 10px 0px ;
+  padding: 20px 30px;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.spacing {
+  margin: 20px 0px;
+}
+.field {
+  padding: 10px 10px;
+  outline: none;
+  width: 100%;
+  border: 1px solid gray !important;
+  border-radius: 5px;
+}
+.textRed {
+  color: red;
+  font-size: 10px;
+}
+.borderRed {
+  border-color: red !important;
+}
+.borderGrey {
+  border: black;
+}
+.submitBtnStyle {
+  background: #FF0000;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    letter-spacing: 1px;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.submitBtnStyle:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgb(207, 142, 142);
+}
+/*Responsive*/
+@media screen and (max-width: 767px) {
+  .loginFormSection {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .loginFormSection {
+    width: 100%;
+  }
+  .colorWhite{
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,239 @@
+h5{
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+Link{
+  text-decoration: none;
+  color: #333;
+}
+p{
+  margin-bottom: 0px !important;
+}
+ul{
+  list-style: none;
+}
+.list{
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.cardContentIm{
+  max-width: 100%;
+  height: auto;
+}
+li:hover{
+  color: #FF0000;
+  transition: 0.4s ease;
+  cursor: pointer
+}
+.main {
+  .heroSection {
+    width: 100%;
+    height: 30vh;
+    background-image: url('../../images/ABSTRACT_BACKGROUND_01_50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h5 {
+      font-size: 40px;
+      font-weight: 400;
+      color: white;
+    }
+
+    h6 {
+      font-size: 20px;
+      color: #FF0000;
+      font-weight: 400;
+    }
+  }
+
+  .shopProduct {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+    .aside {
+      width: 20%;
+      position: sticky;
+      top: 0;
+      position: -webkit-sticky;
+      padding: 20px;
+      height: auto;
+      overflow-y: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .productSection {
+      width: 80%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      // background-color: orange;
+      .shopProductCards{
+      width: 32%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      margin: 10px 0px; 
+      text-align: center;
+      padding: 20px 10px;
+      }
+    }
+  }
+}
+
+/*Responsive*/
+@media screen and (max-width: 800px) {
+  .shopProduct {
+    flex-direction: column-reverse !important;
+
+    .aside {
+      width: 100% !important;
+    }
+
+    .productSection {
+      width: 100% !important;
+    }
+  }
+}
+
+.pdTopBottom{
+  padding: 10px 0px;
+}
+.paginationbutton{
+  // margin-left:20px;
+  padding:10px 10px;
+  // border-radius: 50%;
+  border:none;
+  // color: grey;
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    height: 2rem;
+    // font-weight: 400;
+    font-size: 1rem;
+    padding: 0 0.3rem;
+    line-height: 1;
+    color: #706f6c;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    border: 0.1rem solid transparent;
+    background-color: rgb(226, 226, 226);
+}
+.paginationbutton:hover{
+  border: 1px solid grey;
+}
+.downOp{
+  opacity: 0.4;
+}
+.paraSize{
+  font-size: 16px;
+}
+// .lin{
+//    font-size: 16px;
+//    text-decoration: none;
+//    color: #FF0000;
+//    opacity: 1;
+//    transition: 0.5s ease;
+//    padding: 5px 10px;
+//    border: 1px solid red;
+//    opacity: 0;
+// }
+// .lin:hover{
+//   background-color: red;
+//   color: white;
+// }
+.card:hover .lin{
+  opacity: 1;
+  
+}
+.card:hover .cardContentIm{
+  transform: scale(1.2);
+  transition: 0.2s ease-in;
+}
+.textWrap{
+  display: block !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+@media screen and (max-width: 800px){
+   .aside{
+    display: none;
+   }
+}
+@media screen and (max-width: 1017px){
+  .aside{
+   padding: 0px !important;
+  }
+}
+.listActive{
+  color: red !important;
+}
+.listActive:hover{
+  color: red;
+}
+.listInActive{
+  color: aquamarine !important;
+}
+.cartButtons{
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0px 0.8rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid red;
+    
+    transition: 0.5s ease;
+    .linkOfButton{
+      transition: 0.5s ease;
+      color: red !important;
+    }
+}
+.cartButtons:hover{
+  background-color: red;
+  border: 1px solid red;
+  .linkOfButton{
+    color: white !important;
+  };
+}
+@media screen and (max-width: 400px){
+  .cartButtons{
+      .linkOfButton{
+          font-size: 12px !important;
+      }
+  }
+}
+.myAc{
+  border: 0px !important;
+  background-color: none !important;
+  // color: red !important;
+  // border-bottom: 1px solid rgb(255, 0, 0) !important;
+}
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root{
+  background-color: none !important;
+  // border-bottom: 1px solid rgb(255, 0, 0) !important;
+}
+.loadingSection{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

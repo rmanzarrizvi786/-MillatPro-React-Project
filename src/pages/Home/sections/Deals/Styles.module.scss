@@ -1,0 +1,110 @@
+$orange-gray: #FF0000;
+$orange: #FFF;
+$black: #333;
+$light-black: #777;
+.button{
+    border:1px solid white; padding:5px 20px;text-decoration: none;color: white;
+}
+.button:hover{
+    border:1px solid $orange-gray;
+    color: $orange-gray;
+    transition: 0.3s ease;
+}
+.mainDealsSection{
+    width: 90%;
+    margin: 20px auto;
+    display:flex;
+    justify-content: center;
+    
+    .innerMainSection{
+        justify-content: center;
+       
+        // position: relative;
+        // bottom: 70px;
+        z-index: 1;
+      
+    .colBox{
+        position: relative;
+        
+        .contentBox{
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            .head{
+                color: white;
+                line-height: 1.2 !important;
+                
+            }
+            .head:nth-child(2){
+                margin: 10px 0px;
+                font-size: 2.0rem;
+                font-weight: 700;
+            }
+        }
+    }
+    }
+}
+
+/*Image*/
+.image{
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+/*Image*/
+/*Responsive*/
+@media screen and (max-width: 1230px){
+    .head:nth-child(2){
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 900px){
+  /*  .mainDealsSection{
+        width: 100% !important;
+        padding: 20px;
+    }*/
+    // .innerMainSection{
+    //     // bottom: 0px !important;
+    //     // position: relative !important;
+    //     margin-top: 0px !important;
+    // }
+    .image{
+        height: auto;
+        max-width: 100%;
+    }
+    /*.colBox{
+        box-shadow: none !important;
+    }
+    .head{
+        font-size: 16px;
+    }*/
+
+
+    .mainDealsSection{
+        width: 100% !important;
+        padding: 20px;
+        
+        .innerMainSection{
+            bottom: 0px !important;
+        position: relative !important;
+        .colBox{
+            box-shadow: none !important;
+            .contentBox{
+                .head{
+                    color: white;
+                    line-height: 1.2 !important;
+                    
+                }
+                .head:nth-child(2){
+                    margin: 10px 0px;
+                    font-size: 18px;
+                }
+            }
+        }
+        }
+    }
+}
+.colBox{
+    padding: 5px;
+}

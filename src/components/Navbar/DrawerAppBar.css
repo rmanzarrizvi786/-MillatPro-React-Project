@@ -1,0 +1,48 @@
+.nav_anchor_btn:hover{
+    color: #FF0000 !important;
+    /* border-bottom: 1px solid red; */
+}
+.isActive{
+    color: red;
+}
+.css-10hburv-MuiTypography-root{
+    font-family: "Poppins" !important;
+    text-align: left;
+    
+}
+.nav_mobile_menu li {
+    list-style: none;
+    border-bottom: 1px solid lightgrey;
+}
+.nav_mobile_menu li {
+    padding: 0px 10px;
+}
+
+
+
+@media screen and (min-width:900px) {
+    nav .notButton {
+        display: none;
+    }
+    .cat_mbl {
+        display: none;
+    }
+}
+@media screen and (max-width:900px) {
+    .nav-nav-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.drawer_nav_linkss{
+    text-decoration: none;
+    color: black;
+    padding: 8px 0px  ;
+
+}
+.drawer_nav_linkss:hover{
+    color: #FF0000  !important;
+}
+
+

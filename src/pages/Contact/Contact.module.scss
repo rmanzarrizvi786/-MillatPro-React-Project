@@ -1,0 +1,117 @@
+*{
+    font-family: 'Poppins' !important;
+}
+.container_contact{
+    max-width: 1545px !important;
+}
+
+.contact_us{
+    width: 100%;
+    height: 30vh;
+    // max-height: 400px;
+    display: flex;
+    background-image: url('../../images/ABSTRACT_BACKGROUND_01_50.jpg');
+    // background: linear-gradient(45deg, black, #1A1A1A);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.banner_heading{
+    color: #fff;
+}
+section{
+    width: 100%;
+}
+.contact_form_heading{
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 35px !important;
+    padding: 50px 0px 10px 0px;
+}
+.grid_form_col_5{
+    margin: auto !important;
+}
+.caption_contact_form{
+    text-align: center;
+    padding: 15px 0px;
+    color: #777;
+    font-size: 13px !important;
+}
+.caption_contact_form1{
+    text-align: center;
+    padding: 15px 0px;
+    color:#FF0000 !important;;
+}
+.contact_us_colums{
+    text-align: center;
+}
+.heading_contact_us_col{
+    padding: 10px 0px;
+}
+.fb_icon{
+    color: #4267B2;
+}
+.tweeter_icon{
+    color: #1DA1F2;
+}
+.insta_icon{ 
+    background: #d6249f;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+// box-shadow: 0px 3px 10px rgba(0,0,0,.25);   
+color: white;   
+border-radius: 5px;
+}
+.yt_icon{
+    color: #FF0000;
+}
+.pinterest_icon{
+    color: #E60023;
+}
+.fb_icon:hover,
+.tweeter_icon:hover,
+.yt_icon:hover,
+.pinterest_icon:hover{
+    color: #FF0000;
+}
+.insta_icon:hover{
+    background: #FF0000;
+}
+.fb_icon, .insta_icon, .tweeter_icon,.yt_icon,.pinterest_icon{
+    font-size: 18px !important;
+}
+.icons_list_ul {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.icons_list_li{
+    margin: 0 10px !important;
+    padding: 0px !important;
+    width: fit-content !important;
+}
+.link_contact_sec{
+    color: #000;
+    font-size: 16px !important;
+}
+.link_contact_sec:hover{
+    color: #FF0000;
+}
+@media screen and (max-width:600px) {
+    .middle_grid{
+        margin: 30px 0px !important;
+    }
+    .heading_contact_us_col{
+        font-size: 14px !important;
+        font-weight: 600;
+    }
+    .ppp{
+        font-size: 12px !important;
+    }
+    .link_contact_sec{
+        font-size: 12px !important;
+    }
+}

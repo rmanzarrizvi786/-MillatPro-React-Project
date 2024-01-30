@@ -1,0 +1,171 @@
+.paraSize{
+    font-size: 16px;
+  }
+.main {
+    width: 100%;
+
+    .heroSection {
+        width: 100%;
+        height: 30vh;
+        background-image: url('../../images/ABSTRACT_BACKGROUND_01_50.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h5 {
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+        }
+
+        h6 {
+            font-size: 20px;
+            color: #FF0000;
+            font-weight: 400;
+        }
+    }
+
+    .shopCategoryProduct {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        .asideCategory {
+            width: 20%;
+            position: sticky;
+            top: 0;
+            position: -webkit-sticky;
+            padding: 20px;
+            height: auto;
+            overflow-y: auto;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .productCategoryOfMySection {
+            width: 80%;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+}
+
+.loaderOfCategory {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.paginationbutton{
+    // margin-left:20px;
+    padding:10px 10px;
+    // border-radius: 50%;
+    border:none;
+    // color: grey;
+    display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3rem;
+      height: 2rem;
+      // font-weight: 400;
+      font-size: 1rem;
+      padding: 0 0.3rem;
+      line-height: 1;
+      color: #706f6c;
+      border-radius: 0.3rem;
+      background-color: transparent;
+      border: 0.1rem solid transparent;
+      background-color: rgb(226, 226, 226);
+  }
+  .paginationbutton:hover{
+    border: 1px solid grey;
+  }
+  .downOp{
+    opacity: 0.4;
+  }
+  .card:hover .cardContentIm{
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+  }
+  .cardContentIm{
+    max-width: 100%;
+    height: auto;
+  }
+  .cartButtons{
+    display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3rem;
+      height: 2rem;
+      font-size: 1rem;
+      padding: 0px 0.8rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid red;
+      
+      transition: 0.5s ease;
+      .linkOfButton{
+        transition: 0.5s ease;
+        color: red !important;
+      }
+  }
+  .cartButtons:hover{
+    background-color: red;
+    border: 1px solid red;
+    .linkOfButton{
+      color: white !important;
+    };
+  }
+  .textWrap{
+    display: block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+  }
+@media screen and (max-width: 800px) {
+    .asideCategory {
+        display: none !important;
+    }
+    // .shopCategoryProduct{
+    //     width: 100%;
+    //     justify-content: center;
+    // }
+    .productCategoryOfMySection{
+        width: 100% !important;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .cartButtons{
+        .linkOfButton{
+            font-size: 12px !important;
+        }
+    }
+    .productCategoryOfMySection{
+      width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px){
+    .productCategoryOfMySection{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 1017px) {
+    .asideCategory {
+        padding: 0px !important;
+    }
+    .productCategoryOfMySection{
+      width: 100% !important;
+  }
+}

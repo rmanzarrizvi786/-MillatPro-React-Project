@@ -1,0 +1,152 @@
+.checked {
+    color: orange;
+}
+
+img.inner-img:hover {
+    transform: scale(1.1);
+}
+
+.ProductMainSection {
+    padding: 0px 20px;
+
+    h1 {
+        text-align: center;
+    }
+
+    .mainSection {
+        // width: 80%;
+        margin: 0 auto;
+    }
+
+    .ProductSection {
+        text-align: center;
+        justify-content: center;
+        .card {
+            text-align: center;
+            .cardContent{
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+            .cardContent:hover {
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                transition: 0.3s ease-in;
+
+                .innerImg {
+                    transform: scale(1.2);
+                }
+
+               
+
+            }
+
+            .cardContent {
+                padding: 20px;
+                height: auto;
+
+                p {
+                    padding: 3px 10px;
+                    // font-size: 14px;
+                }
+
+                .price {
+                    font-weight: 600;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+
+                button.btn {
+                    background: none;
+                    transition: 0.9s ease-in;
+                    display: flex;
+                    width: 100%;
+                    display: flex;
+                    border-radius: 0px !important;
+                    color: #FF0000;
+                    border: 1px solid #FF0000;
+                    transition: all .4s ease
+                }
+
+                .btn_cardd {
+                    text-decoration: none;
+
+                button.btn:hover {
+                    background: #FF0000;
+                    transition: 0.4s ease-in;
+                    cursor: pointer;
+                    color: white;
+                }
+
+                
+
+            }
+        }
+
+    }
+}
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 50% !important;
+    }
+}
+.del{
+    color: red;
+    font-size: 16px;
+}
+.ins{
+    color: green;
+    font-size: 16px;
+    text-decoration: none;
+}
+.price{
+    color: green;
+    font-size: 16px !important;
+   
+}
+.para{
+    font-size: 16px;
+}
+
+}
+
+.wrapText{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btnWrap
+    {
+        display: block !important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+.viewMore{
+    border: 1px solid red;
+    color: red !important;
+   
+}
+.viewMore:hover{
+    color: white !important;
+    background-color: #FF0000;
+    transition: 0.5s ease-in;
+}
+
+@media screen and (max-width: 480px){
+    .cardContent{
+        box-shadow: none !important;
+        padding: 0px !important;
+    }
+    .cardContent:hover{
+        box-shadow: none !important;
+        // padding: 0px !important;
+    }
+}

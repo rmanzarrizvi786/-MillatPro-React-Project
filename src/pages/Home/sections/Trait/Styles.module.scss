@@ -1,0 +1,127 @@
+.mainSection{
+  margin: 20px auto;
+  width: 90%;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+  padding: 28px 0;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    
+
+    .box {
+      h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 3px;
+      }
+      p {
+        font-size: 1rem;
+        color: #777;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.bgBG {
+  background: url(https://d-themes.com/react/molla/demo-21/images/home/newsLetter/banner.jpg);
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  height: 400px;
+}
+
+.gridContent {
+  /*background: #fff;*/
+  display: flex;
+  justify-content: center;
+  .grid {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    h2{
+      font-size: 30px;
+    }
+  }
+
+  .inputEmail {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin-top: 1rem;
+
+    input {
+      width: 100%;
+      border: 1px solid #dadada;
+      border-right: none;
+      
+      padding: 1.15rem;
+      height: 46px;
+      outline: none;
+      font-size: 1rem;
+      &:focus {
+        border-color: #FF0000;
+      }
+      &:focus-visible {
+        border-color: #FF0000;
+        border-right: none;
+      }
+    }
+    button {
+      width: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1.2rem 0.5rem 1.5rem;
+      
+      border: none;
+      background: #FF0000;
+      color: #fff;
+      svg {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .icons {
+    grid-template-columns: repeat(2, 1fr);
+
+    .icon {
+      padding: 20px 0;
+    }
+  }
+  .gridContent {
+    
+    .grid{
+      width: 100%;
+    }
+    /*.withBefore::before {
+      top: 0;
+      height: 1px;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+    }*/
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .icons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
